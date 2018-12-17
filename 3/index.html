@@ -65,8 +65,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script>
       $ (function(){
+        
         $("h1").css("color", "red");
-      });  
+        $(".section-1").css("background-color", "yellow");
+        sumar ();
+        $('#row-3').on("click", function(){
+        $('#row-3').css("background-color", "grey");
+      }); 
+
+      function sumar () {
+        var counter = $('.counter').text();
+        counter = parseInt(counter);
+        counter = (counter + 10);
+        $(".counter").text(counter);
+
+      } ;
+      
     </script>
   </body>
 </html>
+
+
+  
