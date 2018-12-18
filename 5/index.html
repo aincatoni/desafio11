@@ -18,10 +18,12 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam nobis facere quo debitis odio?</p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script>
       $ (function(){
        $("p").on("click", function() {
-         alert("has hecho click en un parrafo")
+         swal("has hecho click en un parrafo", "caca", "success");
        });
       });  
     </script>
