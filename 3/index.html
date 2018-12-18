@@ -13,7 +13,9 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio 11 - Ejercicio Java Script 3</title>
   </head>
   <body>
     <h1> Hey !! </h1>
@@ -68,18 +70,21 @@
         
         $("h1").css("color", "red");
         $(".section-1").css("background-color", "yellow");
-        sumar ();
-        $('#row-3').on("click", function(){
-        $('#row-3').css("background-color", "grey");
-      }); 
+        $("#row-3").on("click", function() {
+          $("#row-3 td").addClass("gray");
+        });
+        $("section h1").css("font-size", "4em");
+        $("tr:last-child").css("background-color", "red");
+  
+
+      });
 
       function sumar () {
         var counter = $('.counter').text();
         counter = parseInt(counter);
         counter = (counter + 10);
         $(".counter").text(counter);
-
-      } ;
+      }
       
     </script>
   </body>
